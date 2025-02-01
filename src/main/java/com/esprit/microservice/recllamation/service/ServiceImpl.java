@@ -18,7 +18,7 @@ public class ServiceImpl implements IService {
         return reclamationRepo.save(reclamation);
     }
 
-    /*@Override
+    @Override
     public Reclamation updateReclamation(Long id, Reclamation reclamation) {
         if (reclamationRepo.findById(id).isPresent()) {
             Reclamation existingReclamation = reclamationRepo.findById(id).get();
@@ -30,8 +30,8 @@ public class ServiceImpl implements IService {
         } else {
             return null;
         }
-    }*/
-    @Override
+    }
+    /*@Override
     public Reclamation updateReclamation(Long id, Reclamation reclamation) {
         return reclamationRepo.findById(id).map(existingReclamation -> {
             // Update only the fields that are not null in the incoming reclamation
@@ -49,7 +49,7 @@ public class ServiceImpl implements IService {
             }
             return reclamationRepo.save(existingReclamation);
         }).orElse(null); // Return null if the reclamation with the given ID is not found
-    }
+    }*/
 
     @Override
     public void deleteReclamation(Long id) {
