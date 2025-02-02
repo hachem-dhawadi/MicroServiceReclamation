@@ -21,5 +21,5 @@ public class Reclamation {
     @Enumerated(EnumType.STRING) // Pour stocker l'enum comme une chaîne dans la base de données
     private TypeReclamation type;
 
-    private int user_id;
+    private int user_id; // user_id forgien key
 }
