@@ -4,5 +4,5 @@ public enum TypeReclamation {
     URGENT,
     CLASSIC,
     SECONDARY,
-    
+    FIRSTCLASS
 }
